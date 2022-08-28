@@ -1,16 +1,10 @@
 # ics_r
 
-A new Flutter project.
+Parsing ics file data in flutter app using sharing intent
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+  receive_sharing_intent: ^1.4.5 //for sharing intent from outside the app
+  uri_to_file: ^0.2.0 //convert uri received from intent to file
+  enough_icalendar: ^0.11.0 // convert file to Vcalendar and Event
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
