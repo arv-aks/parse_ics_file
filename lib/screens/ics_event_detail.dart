@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:enough_icalendar/enough_icalendar.dart';
 import 'package:flutter/material.dart';
+import 'package:ics_r/screens/ics_event_detail_using_components.dart';
 import 'package:uri_to_file/uri_to_file.dart';
 
 class IcsEventDetail extends StatefulWidget {
@@ -78,122 +79,7 @@ class _IcsEventDetailState extends State<IcsEventDetail> {
                           height: 8,
                           color: Colors.blue,
                         ),
-                        const Text(
-                          "DETAILS USING COMPONENTS OF EVENT",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 14,
-                            decoration: TextDecoration.underline,
-                          ),
-                        ),
-                        Text.rich(TextSpan(
-                            text: 'Title: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.summary}',
-                                style: styleNormal,
-                              )
-                            ])),
-                        Text.rich(TextSpan(
-                            text: 'Description: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.description}',
-                                style: styleNormal,
-                              )
-                            ])),
-                        Text.rich(TextSpan(
-                            text: 'Start: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.start}',
-                                style: styleNormal,
-                              )
-                            ])),
-                        Text.rich(TextSpan(
-                            text: 'End: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.end}',
-                                style: styleNormal,
-                              )
-                            ])),
-                        Text.rich(TextSpan(
-                            text: 'Created: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.created}',
-                                style: styleNormal,
-                              )
-                            ])),
-                        Text.rich(TextSpan(
-                            text: 'RecurrenceRule: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.recurrenceRule}',
-                                style: styleNormal,
-                              )
-                            ])),
-                        Text.rich(TextSpan(
-                            text: 'Organiser: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.organizer}',
-                                style: styleNormal,
-                              )
-                            ])),
-                        Text.rich(TextSpan(
-                            text: 'Attendees: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.attendees}',
-                                style: styleNormal,
-                              )
-                            ])),
-                        Text.rich(TextSpan(
-                            text: 'Attachments: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.attachments}',
-                                style: styleNormal,
-                              )
-                            ])),
-                        Text.rich(TextSpan(
-                            text: 'Location: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.location}',
-                                style: styleNormal,
-                              )
-                            ])),
-                        Text.rich(TextSpan(
-                            text: 'Last modified: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.lastModified}',
-                                style: styleNormal,
-                              )
-                            ])),
-                        Text.rich(TextSpan(
-                            text: 'Status: ',
-                            style: styleBold,
-                            children: [
-                              TextSpan(
-                                text: '${data.status}',
-                                style: styleNormal,
-                              )
-                            ])),
+                        IcsEventDetailUsingComponents(data: data)
                       ],
                     ),
                   ),
