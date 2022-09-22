@@ -91,6 +91,10 @@ class _MyAppState extends State<MyApp> {
                         ));
               }
             }
+          default:
+            {
+              return MaterialPageRoute(builder: (_) => const HomePage());
+            }
         }
       },
       initialRoute: widget.initData.routeName,
