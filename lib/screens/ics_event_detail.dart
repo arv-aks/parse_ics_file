@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:icalendar_parser/icalendar_parser.dart';
 import 'package:ics_r/model/ics_model.dart';
-import 'package:ics_r/screens/event_detail.dart';
+import 'package:ics_r/screens/tap_event_detail.dart';
 import 'package:ics_r/screens/single_event_detail.dart';
 import 'package:intl/intl.dart';
 import 'package:uri_to_file/uri_to_file.dart';
@@ -58,7 +58,7 @@ class _IcsEventDetailState extends State<IcsEventDetail> {
                             onTap: () {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
-                                return EventDetailWidget(
+                                return TapEventDetail(
                                     icsData: dataList[index]);
                               }));
                             },

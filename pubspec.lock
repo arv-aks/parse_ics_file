@@ -50,13 +50,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
-  enough_icalendar:
-    dependency: "direct main"
-    description:
-      name: enough_icalendar
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.11.0"
   fake_async:
     dependency: transitive
     description:

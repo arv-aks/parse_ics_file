@@ -15,7 +15,7 @@ class InitialData {
   InitialData(this.sharedText, this.routeName);
 }
 
-//set up route
+//set up route and handling sharing intent from outside
 Future<InitialData> init() async {
   String sharedText = "";
   String routeName = routeHomePage;
