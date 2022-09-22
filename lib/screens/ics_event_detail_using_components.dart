@@ -19,9 +19,7 @@ class IcsEventDetailUsingComponents extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       const Text(
         "DETAILS USING COMPONENTS OF EVENT",
         style: TextStyle(

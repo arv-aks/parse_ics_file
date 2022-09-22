@@ -75,7 +75,7 @@ class _MyAppState extends State<MyApp> {
       onGenerateRoute: (RouteSettings settings) {
         switch (settings.name) {
           case routeHomePage:
-            return MaterialPageRoute(builder: (_) =>const HomePage());
+            return MaterialPageRoute(builder: (_) => const HomePage());
           case routeIcsEventDetail:
             {
               if (settings.arguments != null) {
